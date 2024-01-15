@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="form.css" />
+    <style>
+      nav {
+        border-bottom: 3px solid black;
+        padding: 5px 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <h2 style="color: brown; font-size: 30px">HTML & CSS Basics</h2>
+      <a href="index.html">Move to Home</a>
+      <a href="table.html">Move to Table</a>
+      <a href="canvas.html">Move to canvas</a>
+    </nav>
+    <div id="form">
+      <h2>Form</h2>
+      <form>
+        <label> Name: <input placeholder="Enter Name..." required /> </label>
+        <label>
+          Email: <input type="email" placeholder="Enter Email..." required />
+        </label>
+        <label>
+          Password:
+          <input type="password" placeholder="Enter password" required />
+        </label>
+        <label>
+          Gender:
+          <span>
+            <label id="block"><input type="radio" name="gender" /> Male</label>
+            <label id="block"
+              ><input type="radio" name="gender" /> Female</label
+            >
+            <label id="block"><input type="radio" name="gender" /> Other</label>
+          </span>
+        </label>
+        <label>
+          Hobbies:
+          <span>
+            <label id="block"><input type="checkbox" /> Reading books</label>
+            <label id="block"><input type="checkbox" /> Dancing</label>
+            <label id="block"><input type="checkbox" /> Singing</label>
+            <label id="block"><input type="checkbox" /> Painting</label>
+            <label id="block"><input type="checkbox" /> Listening music</label>
+            <label id="block"><input type="checkbox" /> Coding</label>
+          </span>
+        </label>
+        <label
+          >Place:
+          <select>
+            <option>Mumbai</option>
+            <option>Chennai</option>
+            <option>Bangalore</option>
+            <option>Delhi</option>
+            <option>Kolkata</option>
+            <option>Hyderabad</option>
+            <option>Bhubaneshwar</option>
+            <option>Ahmedabad</option>
+          </select>
+        </label>
+        <label>Date: <input type="date" /></label>
+        <label>Bio: <textarea></textarea></label>
+        <input type="submit" value="Save" />
+      </form>
+    </div>
+  </body>
+</html>
