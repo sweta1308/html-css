@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML CSS</title>
+    <!-- styling using external css page -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- styling using style tag -->
+    <style>
+      nav {
+        border-bottom: 3px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <!-- inline style -->
+      <h2 style="color: brown; font-size: 30px">HTML & CSS Basics</h2>
+      <!-- hyperlinks -->
+      <a href="form.html">Move to Form</a>
+      <a href="table.html">Move to Table</a>
+      <a href="canvas.html">Move to canvas</a>
+      <a href="#paragraph">Move to Paragraph</a>
+    </nav>
+    <div class="content">
+      <header>
+        <!-- headings -->
+        <h1>Largest Heading</h1>
+        <h2>Second Largest Heading</h2>
+        <h3>Medium Heading</h3>
+        <h4>Small Heading</h4>
+        <h5>Extra Small Heading</h5>
+        <h6>Extra extra Small Heading</h6>
+      </header>
+      <hr />
+
+      <fieldset>
+        <legend>Are you a dog person or a cat person?</legend>
+        <label><input type="radio" name="pet" /> Dog</label>
+        <label><input type="radio" name="pet" /> Cat</label>
+      </fieldset>
+
+      <a href="https://deuexsolutions.com/" target="_blank"
+        >Go to official website</a
+      >
+
+      <div class="selector">
+        <p>Grandparent</p>
+        <span>Parent</span>
+        <span>Child</span>
+        <div>Grand Child</div>
+        <span>Greate Grand Child</span>
+      </div>
+
+      <!-- text styling -->
+      <div id="random">Random Text</div>
+
+      <div>
+        <!-- list items -->
+        <section>
+          <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+          </ul>
+        </section>
+        <section>
+          <ol>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+          </ol>
+        </section>
+        <section>
+          <ol reversed>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+          </ol>
+        </section>
+      </div>
+
+      <!-- paragraphs -->
+      <div>
+        <span>Paragraph</span>
+        <p id="paragraph">
+          <strong><em>Lorem ipsum dolor sit amet,</em></strong>
+          <small>consectetur adipiscing elit,</small> sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua.
+          <span
+            >Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat.</span
+          >
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+          dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est
+          laborum.
+        </p>
+      </div>
+
+      <!-- external media -->
+      <div>
+        <img
+          src="https://statisticsbyjim.com/wp-content/uploads/2019/05/random_dice.png"
+          alt="girl"
+        />
+        <video controls>
+          <source src="assets/video.mp4" type="video/mp4" />
+        </video>
+        <audio src="assets/dice-142528.mp3" controls></audio>
+        <iframe
+          src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=15px&lh=133%25&si=false&es=2x&wm=false&code=const%2520message%2520%253D%2520%2522Hello%2520World%2522%253B%250Aalert%28message%29%253B"
+          style="
+            width: 421px;
+            height: 226px;
+            border: 0;
+            transform: scale(1);
+            overflow: hidden;
+          "
+          sandbox="allow-scripts allow-same-origin"
+        >
+        </iframe>
+      </div>
+
+      <div class="position">
+        <div class="one">One</div>
+        <div class="two">Two</div>
+        <div class="three">Three</div>
+      </div>
+
+      <footer>Contact Details</footer>
+    </div>
+  </body>
+</html>
