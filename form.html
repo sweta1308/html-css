@@ -19,56 +19,83 @@
       <a href="index.html">Move to Home</a>
       <a href="table.html">Move to Table</a>
       <a href="canvas.html">Move to canvas</a>
+      <a href="absolute.html">Move to Position</a>
+      <a href="scroll.html">Move to Scroll</a>
     </nav>
     <div id="form">
       <h2>Form</h2>
-      <form>
-        <label> Name: <input placeholder="Enter Name..." required /> </label>
+      <form class="form">
+        <label> Name: <input placeholder="Enter Name..." name="name" required /> </label>
         <label>
-          Email: <input type="email" placeholder="Enter Email..." required />
+          Email: <input type="email" placeholder="Enter Email..." name="email" required />
         </label>
         <label>
           Password:
-          <input type="password" placeholder="Enter password" required />
+          <input type="password" placeholder="Enter password" name="password" required />
         </label>
         <label>
           Gender:
           <span>
-            <label id="block"><input type="radio" name="gender" /> Male</label>
             <label id="block"
-              ><input type="radio" name="gender" /> Female</label
+              ><input type="radio" name="gender" value="Male" required />
+              Male</label
             >
-            <label id="block"><input type="radio" name="gender" /> Other</label>
+            <label id="block"
+              ><input type="radio" name="gender" value="Female" required />
+              Female</label
+            >
+            <label id="block"
+              ><input type="radio" name="gender" value="Other" required />
+              Other</label
+            >
           </span>
         </label>
         <label>
           Hobbies:
           <span>
-            <label id="block"><input type="checkbox" /> Reading books</label>
-            <label id="block"><input type="checkbox" /> Dancing</label>
-            <label id="block"><input type="checkbox" /> Singing</label>
-            <label id="block"><input type="checkbox" /> Painting</label>
-            <label id="block"><input type="checkbox" /> Listening music</label>
-            <label id="block"><input type="checkbox" /> Coding</label>
+            <label id="block"
+              ><input type="checkbox" value="Reading books" name="hobbies" /> Reading
+              books</label
+            >
+            <label id="block"
+              ><input type="checkbox" value="Dancing" name="hobbies" /> Dancing</label
+            >
+            <label id="block"
+              ><input type="checkbox" value="Singing" name="hobbies" /> Singing</label
+            >
+            <label id="block"
+              ><input type="checkbox" value="Painting" name="hobbies" /> Painting</label
+            >
+            <label id="block"
+              ><input type="checkbox" value="Listening music" name="hobbies" /> Listening
+              music</label
+            >
+            <label id="block"
+              ><input type="checkbox" value="Coding" name="hobbies" /> Coding</label
+            >
           </span>
         </label>
         <label
           >Place:
-          <select>
-            <option>Mumbai</option>
-            <option>Chennai</option>
-            <option>Bangalore</option>
-            <option>Delhi</option>
-            <option>Kolkata</option>
-            <option>Hyderabad</option>
-            <option>Bhubaneshwar</option>
-            <option>Ahmedabad</option>
+          <select required name="place">
+            <option value="">Select One</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Chennai">Chennai</option>
+            <option value="Bangalore">Bangalore</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Kolkata">Kolkata</option>
+            <option value="Hyderabad">Hyderabad</option>
+            <option value="Bhubaneshwar">Bhubaneshwar</option>
+            <option value="Ahmedabad">Ahmedabad</option>
           </select>
         </label>
-        <label>Date: <input type="date" /></label>
-        <label>Bio: <textarea></textarea></label>
-        <input type="submit" value="Save" />
+        <label>Date: <input type="date" name="date" required /></label>
+        <label>Bio: <textarea name="bio"></textarea></label>
+        <button class="submitBtn">Submit</button>
+        <button class="cancelBtn">Cancel</button>
       </form>
     </div>
+
+    <script src="form.js"></script>
   </body>
 </html>
