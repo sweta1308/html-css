@@ -7,7 +7,7 @@ const handleSubmit = () => {
   const userData = {};
   for (let i = 0; i < formElements.length; i++) {
     const element = formElements[i];
-    if (element.tagName === "BUTTON") continue; // Exclude the button
+    if (element.tagName === "BUTTON") continue; 
     userData[element.name] = element.value;
   }
   alert(
