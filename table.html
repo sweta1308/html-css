@@ -14,29 +14,31 @@
       <a href="index.html">Move to Home</a>
       <a href="form.html">Move to Form</a>
       <a href="canvas.html">Move to canvas</a>
+      <a href="absolute.html">Move to Position</a>
+      <a href="scroll.html">Move to Scroll</a>
     </nav>
     <h2 class="header">Table</h2>
     <table>
       <thead>
         <tr>
           <th>Serial No.</th>
-          <th>Name of Student</th>
+          <th class="student">Name of Student</th>
           <th>Standard</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td>1</td>
+          <td rowspan="3">1</td>
           <td>Emily Smith</td>
           <td>5th</td>
         </tr>
         <tr>
-          <td>2</td>
-          <td>John Doe</td>
-          <td>10th</td>
+          <!-- <td>2</td> -->
+          <td colspan="2">John Doe</td>
+          <!-- <td>10th</td> -->
         </tr>
         <tr>
-          <td>3</td>
+          <!-- <td>3</td> -->
           <td>Jane Doe</td>
           <td>7th</td>
         </tr>
@@ -46,9 +48,17 @@
           <td>2nd</td>
         </tr>
         <tr>
-          <td>5</td>
-          <td>Ben Cooper</td>
-          <td>4th</td>
+          <td colspan="5">5</td>
+          <!-- <td>Ben Cooper</td>
+          <td>4th</td> -->
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt
+          </td>
+          <td>5th</td>
         </tr>
       </tbody>
     </table>
