@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/css/table.css" />
+    <style>
+      nav {
+        border-bottom: 3px solid black;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav>
+      <h2 style="color: brown; font-size: 30px">HTML & CSS Basics</h2>
+      <a href="/index.html">Move to Home</a>
+      <a href="/html/form.html">Move to Form</a>
+      <a href="/html/canvas.html">Move to canvas</a>
+      <a href="/html/absolute.html">Move to Position</a>
+      <a href="/html/scroll.html">Move to Scroll</a>
+      <a href="/html/css-advance.html">Move to CSS Advance</a>
+    </nav>
+    <h2 class="header">Table</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Serial No.</th>
+          <th class="student">Name of Student</th>
+          <th>Standard</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="3">1</td>
+          <td>Emily Smith</td>
+          <td>5th</td>
+        </tr>
+        <tr>
+          <!-- <td>2</td> -->
+          <td colspan="2">John Doe</td>
+          <!-- <td>10th</td> -->
+        </tr>
+        <tr>
+          <!-- <td>3</td> -->
+          <td>Jane Doe</td>
+          <td>7th</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Joseph Williams</td>
+          <td>2nd</td>
+        </tr>
+        <tr>
+          <td colspan="5">5</td>
+          <!-- <td>Ben Cooper</td>
+          <td>4th</td> -->
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt
+          </td>
+          <td>5th</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

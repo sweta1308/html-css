@@ -1,0 +1,26 @@
+.header {
+  text-align: center;
+}
+
+table {
+  margin: 0 auto;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+td,
+th {
+  padding: 10px 20px;
+  border: 1px solid black;
+}
+
+.student {
+  width: 250px;
+}
+
+td {
+  overflow: hidden;
+  max-width: 250px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
