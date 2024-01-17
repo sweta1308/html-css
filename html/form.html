@@ -25,7 +25,7 @@
     </nav>
     <div id="form">
       <h2>Form</h2>
-      <form class="form">
+      <form class="form" onsubmit="handleSubmit()">
         <label> Name: <input placeholder="Enter Name..." name="name" required /> </label>
         <label>
           Email: <input type="email" placeholder="Enter Email..." name="email" required />
@@ -92,7 +92,7 @@
         </label>
         <label>Date: <input type="date" name="date" required /></label>
         <label>Bio: <textarea name="bio"></textarea></label>
-        <button class="submitBtn">Submit</button>
+        <button class="submitBtn" type="submit">Submit</button>
         <button class="cancelBtn" formnovalidate>Cancel</button>
       </form>
     </div>
