@@ -10,6 +10,12 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.active-state {
+  color: rgb(130, 112, 247);
+  font-weight: bold;
+  text-decoration: none;
+}
+
 fieldset {
   margin: 50px 0;
   border-radius: 5px;
