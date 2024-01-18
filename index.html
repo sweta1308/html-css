@@ -144,7 +144,9 @@
       <footer>Contact Details</footer>
       <script>
         window.addEventListener("message", function (event) {
-          document.getElementById("divChild").innerText = "Message received from the child: " + event.data;
+          document.getElementById("divChild").innerText = `${
+            event.data ? "Message received from the child: " + event.data : ""
+          }`;
         });
       </script>
     </div>
