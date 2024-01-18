@@ -112,7 +112,7 @@
           <source src="assets/video.mp4" type="video/mp4" />
         </video>
         <audio src="assets/dice-142528.mp3" controls></audio>
-        <iframe
+        <!-- <iframe
           src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=15px&lh=133%25&si=false&es=2x&wm=false&code=const%2520message%2520%253D%2520%2522Hello%2520World%2522%253B%250Aalert%28message%29%253B"
           style="
             width: 421px;
@@ -123,10 +123,15 @@
           "
           sandbox="allow-scripts allow-same-origin"
         >
-        </iframe>
+        </iframe> -->
       </div>
 
-      <iframe src="https://iframe-eight-phi.vercel.app/" width="100" height="100"></iframe>
+      <iframe
+        src="https://iframe-eight-phi.vercel.app/"
+        width="100"
+        height="100"
+      ></iframe>
+      <div id="divChild"></div>
 
       <div class="position">
         <div class="one">One</div>
@@ -135,6 +140,11 @@
       </div>
 
       <footer>Contact Details</footer>
+      <script>
+        window.addEventListener("message", function (event) {
+          document.getElementById("divChild").innerText = "Message received from the child: " + event.data;
+        });
+      </script>
     </div>
   </body>
 </html>
